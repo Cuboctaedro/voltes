@@ -1,0 +1,292 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+.uniform__potty,
+.honeypot-field {
+    position: absolute;
+    left: -9999px;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.card-link::after {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    cursor: pointer;
+}
+
+.gutter {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+@screen lg {
+    .gutter {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+
+::selection {
+    @apply bg-red-200 ;
+}
+::-moz-selection {
+    @apply bg-red-200 ;
+}
+
+
+a {
+    @apply text-brand-600 ;
+}
+
+a:hover {
+    @apply text-brand-700 ;
+}
+
+.heading-1 {
+    @apply text-3xl font-titles leading-tight text-brand-500 ;
+}
+.heading-1 a {
+    @apply text-brand-500 ;
+}
+
+.heading-2 {
+    @apply text-3xl font-titles leading-tight text-brand-500 ;
+}
+.heading-2 a {
+    @apply text-brand-500 ;
+}
+.heading-2 a:hover {
+    @apply text-brand-600 ;
+}
+
+
+.heading-3 {
+    @apply text-2xl font-titles leading-tight text-brand-600 border-t border-solid border-brand-600 ;
+}
+.heading-footer {
+    @apply text-2xl font-titles leading-tight text-brand-800 border-t border-solid border-brand-800 ;
+}
+.heading-4 {
+    @apply text-xl font-titles leading-tight text-brand-500  ;
+}
+
+.generated {
+    @apply text-base leading-normal ;
+}
+.generated p {
+    @apply mb-4;
+}
+.generated p:last-child {
+    @apply mb-0;
+}
+.generated ul {
+    @apply mb-4 pl-6;
+    list-style-type: square;
+    list-style-position: outside;
+}
+.generated ul:last-child {
+    @apply mb-0;
+}
+.generated ol {
+    @apply mb-4 pl-6;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.generated ol:last-child {
+    @apply mb-0;
+}
+.generated blockquote {
+    @apply mb-4 px-6 italic;
+}
+.generated blockquote:last-child {
+    @apply mb-0;
+}
+
+.generated h2 {
+    @apply text-2xl font-titles leading-tight text-brand-500 mb-2 ;
+}
+.generated h3 {
+    @apply text-xl font-titles leading-tight text-brand-500 uppercase tracking-wider mb-2 ;
+}
+.generated h4 {
+    @apply font-bold uppercase tracking-wider mb-3 ;
+}
+.sidebar {
+    @apply text-sm leading-normal text-gray-800 ;
+}
+.sidebar p {
+    @apply mb-3;
+}
+.sidebar p:last-child {
+    @apply mb-0;
+}
+.sidebar ul {
+    @apply mb-3 pl-4;
+    list-style-type: square;
+    list-style-position: outside;
+}
+.sidebar ul:last-child {
+    @apply mb-0;
+}
+.sidebar ol {
+    @apply mb-3 pl-4;
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.sidebar ol:last-child {
+    @apply mb-0;
+}
+.sidebar blockquote {
+    @apply mb-3 px-3 italic;
+}
+.sidebar blockquote:last-child {
+    @apply mb-0;
+}
+.sidebar h2 {
+    @apply text-2xl font-bold leading-tight mb-2 ;
+}
+.sidebar h3 {
+    @apply text-xl font-bold leading-tight mb-2 ;
+}
+.sidebar h4 {
+    @apply font-bold uppercase tracking-wider mb-3 ;
+}
+
+.tag::after {
+    content: ', ';
+    padding-right: 0.25rem;
+}
+.tag:last-child::after {
+    content: '';
+    padding-right: 0;
+}
+
+body {
+    background-image: url('images/maze.png');
+    background-position: left top;
+    background-repeat: repeat;
+}
+
+
+.label {
+    @apply text-sm font-titles leading-relaxed uppercase tracking-wider text-gray-600 ;
+}
+
+.card {
+    @apply h-full bg-white shadow-md relative ;
+}
+.card_hover:hover {
+    @apply shadow-xl ;
+}
+.card_border {
+    @apply border-b border-gray-200 border-solid ;
+}
+
+.line {
+	position: relative;
+	overflow: hidden;
+    display: inline-block;
+}
+.line:before {
+    content: "";
+    position: absolute;
+    /* z-index: -1; */
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    @apply bg-brand-600 ;
+    height: 1px;
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+.line:hover {
+    @apply text-brand-600 ;
+}
+.line:hover:before,
+.line:focus:before,
+.line:active:before {
+    right: 0;
+}
+
+.facebookhover:hover {
+    color: #4172B8;
+}
+
+.twitterhover:hover {
+    color: #1DA1F2;
+}
+.button {
+   @apply font-titles text-sm uppercase tracking-wider  py-1 px-4 rounded ;
+}
+.button_solid {
+    @apply text-white bg-brand-600 shadow-md;
+}
+.button_solid:hover {
+    @apply bg-brand-500 text-white shadow-lg;
+}
+.button_border {
+    @apply bg-white text-brand-600 border-brand-600 border-solid border;
+
+}
+.button_border:hover {
+    @apply bg-white text-brand-500 border-brand-500 shadow-md;
+}
+.button_solid_danger {
+    @apply text-white bg-red-600 shadow-md;
+}
+.button_solid_danger:hover {
+    @apply bg-red-500 text-white shadow-lg;
+}
+.button_border_danger {
+    @apply bg-white text-red-600 border-red-600 border-solid border;
+
+}
+.button_border_danger:hover {
+    @apply bg-white text-red-500 border-red-500 shadow-md;
+}
+
+
+.pagecard {
+    @apply bg-white shadow-md mb-12 w-full mx-auto ;
+}
+@screen lg {
+    .pagecard {
+        @apply w-2/3  ;
+    }
+}

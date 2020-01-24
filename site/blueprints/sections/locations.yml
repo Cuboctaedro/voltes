@@ -1,0 +1,5 @@
+headline: Τοποθεσίες
+type: pages
+status: all
+parent: site.find("locations")
+templates: location

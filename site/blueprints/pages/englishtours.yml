@@ -1,0 +1,24 @@
+title: Englishtours Page
+
+tabs:
+    content:
+        label: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        body:
+                            extends: fields/editor
+                            label: Κείμενο
+                englishtours:
+                    extends: sections/englishtours
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo
+    message: tabs/message

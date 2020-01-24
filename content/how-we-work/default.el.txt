@@ -1,0 +1,34 @@
+Title: 
+
+Πως δουλεύουμε
+
+----
+
+Slug: how-we-work
+
+----
+
+Body: 
+
+- (link: oroi-symmetoxhs-stis-draseis-gia-paidia text: Όροι συμμετοχής στις δράσεις για παιδιά)
+- (link: oroi-symmetoxhs-stis-draseis-gia-enhlikes text: Όροι συμμετοχής στις δράσεις για ενήλικες)
+
+----
+
+Description: 
+
+----
+
+Featuredimage: 
+
+----
+
+Authortwitter: 
+
+----
+
+Message: 
+
+----
+
+Template: default

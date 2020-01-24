@@ -1,0 +1,44 @@
+Title: Archaeological Panorama
+
+----
+
+Slug: archaeological-panorama
+
+----
+
+Subtitle: A 3hrs tour at the Archaeological Museum of Athens
+
+----
+
+Body: 
+
+**The Greek mythology, rich in characters, plot and emotion, resembles a film script where gods, heroes, mythical monsters, creatures of fantasy and passionate people are the protagonists. The Collection of Sculptures of the National Archaeological Museum is the best starting point for children to understand how the myths connect with history and art.**
+
+###INFO###
+A 3hrs family-friendly tour at the most significant collections of the Archaeological Museum of Athens
+
+----
+
+Coverimage: 
+
+- 20160417_174451.jpg
+
+----
+
+Description: 
+
+----
+
+Featuredimage: 
+
+----
+
+Authortwitter: 
+
+----
+
+Message: 
+
+----
+
+Template: englishtour

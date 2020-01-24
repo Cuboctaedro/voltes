@@ -1,0 +1,193 @@
+title: Site
+
+tabs:
+    content:
+        label: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                programs:
+                    extends: sections/programs
+                locations:
+                    extends: sections/locations
+                blog:
+                    extends: sections/blog
+                englishtours:
+                    extends: sections/englishtours
+                otherpages:
+                    headline: Σελιδες
+                    type: pages
+                    status: all
+                    templates:
+                      - home
+                      - schools
+                      - blog
+                      - reviews
+                      - services
+                      - locations
+                      - programs
+                      - default
+                      - success
+                    create:
+                      - default
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+                siteseo:
+                    type: fields
+                    fields:
+                        sitetwitter:
+                            type: text
+                            label: Site Twitter Username
+                        facebook:
+                            type: url
+                            label: Facebook Page
+                        twitter:
+                            type: url
+                            label: Site Twitter Page
+                        instagram:
+                            type: url
+                            label: Instagram Page
+                        pinterest:
+                            type: url
+                            label: Pinterest Page
+                        linkedin:
+                            type: url
+                            label: LinkedIn Page
+                        description:
+                            type: textarea
+                            label: Meta Description
+    emails:
+        label: Κείμενα email
+        icon: email
+        sections:
+            texts:
+                type: fields
+                fields:
+                    adultbooking:
+                        label: Adult tour booking
+                        type: headline
+                    adultbookingstart:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Adult tour booking intro text
+                    adultbookingend:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Adult tour booking final text
+                    adultwaiting:
+                        label: Adult tour waiting list
+                        type: headline
+                    adultwaitingstart:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Adult tour waiting list intro text
+                    adultwaitingend:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Adult tour waiting list final text
+                    childrenbooking:
+                        label: Children tour booking
+                        type: headline
+                    childrenbookingstart:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Children tour booking intro text
+                    childrenbookingend:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Children tour booking final text
+                    childrenwaiting:
+                        label: Children tour waiting list
+                        type: headline
+                    childrenwaitingstart:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Children tour waiting list intro text
+                    childrenwaitingend:
+                        type: markdown
+                        size: medium
+                        width: 1/2
+                        label: Children tour waiting list final text
+    sidebars:
+        label: Επιλογές Footer
+        icon: text
+        sections:
+            sidebar:
+                type: fields
+                fields:
+                    tourlist:
+                        label: Tour Listing Footer
+                        type: headline
+                    tourlistleft:
+                        label: Tour Listing Left
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    tourlistright:
+                        label: Tour Listing Right
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    toursingle:
+                        label: Single Children Tour Footer
+                        type: headline
+                    toursingleleft:
+                        label: Single Children Tour Left
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    toursingleright:
+                        label: Single Children Tour Right
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    toursingleadult:
+                        label: Single Adult Tour Footer
+                        type: headline
+                    toursingleadultleft:
+                        label: Single Adult Tour Left
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    toursingleadultright:
+                        label: Single Adult Tour Right
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    tourform:
+                        label: Booking Form Footer
+                        type: headline
+                    tourformleft:
+                        label: Booking Form Left
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+                    tourformright:
+                        label: Booking Form Right
+                        type: pages
+                        multiple: false
+                        query: site.children.template("default")
+    menus:
+        label: Επιλογές Μενού
+        icon: menu
+        sections:
+            menu:
+                type: fields
+                fields:
+                    mainmenu:
+                        label: Top Menu
+                        type: pages
+                    footermenu:
+                        label: Bottom Menu
+                        type: pages

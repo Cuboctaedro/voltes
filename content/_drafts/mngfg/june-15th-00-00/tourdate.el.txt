@@ -1,0 +1,25 @@
+Title: 
+
+----
+
+Slug: 
+
+----
+
+Date: 2019-06-15
+
+----
+
+Time: 03:00
+
+----
+
+Seats: 18
+
+----
+
+Cancelled: false
+
+----
+
+Template: tourdate

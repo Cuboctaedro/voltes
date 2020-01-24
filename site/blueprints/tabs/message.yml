@@ -1,0 +1,18 @@
+label: Alert
+icon: alert
+columns:
+  - width: 2/3
+    sections:
+        main:
+            type: fields
+            fields:
+                message:
+                    type: markdown
+                    label: Μήνυμα
+                    buttons:
+                      - italic
+                      - bold
+                      - link
+                      - email
+                      - pagelink
+                    size: medium

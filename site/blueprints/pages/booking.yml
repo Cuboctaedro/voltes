@@ -1,0 +1,114 @@
+title: Booking
+
+options:
+    create: true
+
+sections:
+    content:
+        type: fields
+        fields:
+            first_name:
+                type: text
+                label: Ονομα
+                width: 1/2
+                translate: false
+            last_name:
+                type: text
+                label: Επίθετο
+                width: 1/2
+                translate: false
+            line-a:
+                type: line
+            address:
+                type: text
+                label: Διεύθυνση
+                width: 1/2
+                translate: false
+            city:
+                type: text
+                label: Πόλη
+                width: 1/2
+                translate: false
+            phone:
+                type: text
+                label: Τηλέφωνο
+                width: 1/2
+                translate: false
+            email:
+                type: text
+                label: Email
+                width: 1/2
+                translate: false
+            line-b:
+                type: line
+            adult_number:
+                type: number
+                label: Αριθμός ενιλήκων
+                width: 1/2
+                translate: false
+            teen_number:
+                type: number
+                label: Αριθμός Εφήβων
+                width: 1/2
+                translate: false
+            children_number:
+                type: number
+                label: Αριθμός παιδιών
+                width: 1/2
+                translate: false
+            children_names:
+                type: textarea
+                label: Ονόματα παιδιών
+                buttons: false
+                width: 1/2
+                size: small
+                translate: false
+            line-c:
+                type: line
+            client_message:
+                type: textarea
+                label: Μήνυμα πελάτη
+                buttons: false
+                width: 1/2
+                size: small
+                translate: false
+            notes:
+                type: textarea
+                label: Σημειώσεις
+                buttons: false
+                width: 1/2
+                size: small
+                translate: false
+            booking_time:
+                type: date
+                time: true
+                label: Ωρα κράτησης
+                width: 1/2
+                translate: false
+            booking_type:
+                type: text
+                width: 1/2
+                translate: false
+            payment_method:
+                type: text
+                width: 1/2
+                label: Τρόπος πληρωμής
+                translate: false
+            payment:
+                type: toggle
+                label: Ολοκλήρωση πληρωμής
+                width: 1/2
+                translate: false
+                default: false
+                text:
+                  - Οχι
+                  - Ναι
+            cancel:
+                type: toggle
+                label: Ακύρωση
+                width: 1/2
+                translate: false
+                default: false
+                text:
+                  - Οχι
+                  - Ναι

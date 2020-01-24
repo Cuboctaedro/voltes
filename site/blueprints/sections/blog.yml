@@ -1,0 +1,5 @@
+headline: Blog
+type: pages
+status: all
+parent: site.find("blog")
+templates: post

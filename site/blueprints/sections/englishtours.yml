@@ -1,0 +1,5 @@
+headline: English Tours
+type: pages
+status: all
+parent: site.find("walk-the-city")
+templates: englishtour

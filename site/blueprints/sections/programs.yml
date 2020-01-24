@@ -1,0 +1,23 @@
+headline: Προγράμματα
+type: pagetable
+status: all
+parent: site.find("programs")
+templates: program
+columns:
+    title:
+        label: Τίτλος
+        type: text
+        text: '{{ page.title }}'
+        sortable: true
+        searchable: true
+    location:
+        label: Τοποθεσία
+        type: text
+        text: '{{ page.location }}'
+        sortable: true
+        searchable: true
+    tours:
+        label: Ξεναγήσεις
+        type: number
+        text: '{{ page.activeTours.count }}'
+        sortable: true

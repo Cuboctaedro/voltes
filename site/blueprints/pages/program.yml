@@ -1,0 +1,131 @@
+title: Program Page
+
+tabs:
+    content: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        tourtype:
+                            label: Είδος ξενάγησης
+                            type: radio
+                            default: children
+                            options:
+                                children: Παίδιά
+                                adults: Ενήλικες
+                        contenthead:
+                            label: Γενικά
+                            type: headline
+                        location:
+                            type: text
+                            label: Τοποθεσία
+                        body:
+                            extends: fields/editor
+                            label: Περιγραφή
+                        infohead:
+                            label: Ραντεβού
+                            type: headline
+                        locationinfo:
+                            extends: fields/editor
+                            label: Πληροφορίες για το χώρο
+                        meetingpoint:
+                            extends: fields/editor
+                            label: Σημείο συνάντησης
+                            width: 1/2
+                        meetingimage:
+                            extends: fields/image
+                            label: Εικόνα σημείου συνάντησης
+                            width: 1/2
+                        howtoget:
+                            extends: fields/editor
+                            label: Πως να φτάσετε
+                            width: 1/2
+                        pricetext:
+                            extends: fields/editor
+                            label: Πληροφορίες για την τιμή
+                            width: 1/2
+                        map:
+                            type: url
+                            label: Google map link
+                            width: 1/2
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+                image:
+                    type: fields
+                    fields:
+                        coverimage:
+                            extends: fields/image
+                            label: Εικόνα
+                        ages:
+                            type: text
+                            label: Ηλικίες
+                            when:
+                                tourtype: children
+                        duration:
+                            type: text
+                            label: Διάρκεια
+                        adultprice:
+                            type: number
+                            label: Τιμή για Ενήλικες
+                        childrenprice:
+                            type: number
+                            label: Τιμή για Παίδιά
+                            when:
+                                tourtype: children
+                        entranceticket:
+                            type: number
+                            label: Εισιτήριο Εισόδου
+                        priceinfo:
+                            extends: fields/editor
+                            label: Διευκρινήσεις για την τιμή
+          - width: 1/1
+            sections:
+                dates:
+                    headline: Ημερομηνίες
+                    type: pagetable
+                    status: all
+                    templates: tourdate
+                    columns:
+                        date:
+                            label: Ημερομηνία
+                            text: '{{ page.date.toDate("Y-m-d") }}'
+                            dateInputFormat: 'YYYY-MM-DD'
+                            dateOutputFormat: 'ddd MMMM Do'
+                            type: date
+                            sortable: true
+                            searchable: true
+                        time:
+                            label: Ωρα
+                            text: '{{ page.time }}'
+                            type: text
+                            sortable: true
+                            searchable: true
+                        tourstatus:
+                            label: Κατάσταση
+                            text: '{{ page.tourstatus }}'
+                            type: text
+                            sortable: true
+                            searchable: true
+                        children:
+                            label: Αριθμός παιδιών
+                            text: '{{ page.childrenNumber }}'
+                            type: number
+                            sortable: true
+                        teens:
+                            label: Αριθμός εφήβων
+                            text: '{{ page.teensNumber }}'
+                            type: number
+                            sortable: true
+                        adults:
+                            label: Αριθμός ενηλίκων
+                            text: '{{ page.adultsNumber }}'
+                            type: number
+                            sortable: true
+
+    seo: tabs/seo
+    message: tabs/message

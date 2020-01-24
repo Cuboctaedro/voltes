@@ -1,0 +1,57 @@
+title: Location Page
+
+tabs:
+    content: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        contenthead:
+                            label: Γενικά
+                            type: headline
+                        body:
+                            extends: fields/editor
+                            label: Περιγραφή
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+                image:
+                    type: fields
+                    fields:
+                        coverimage:
+                            extends: fields/image
+                            label: Εικόνα
+          - width: 1/1
+            sections:
+                programs:
+                    type: fields
+                    fields:
+                        programs:
+                            label: Προγράμματα
+                            type: structure
+                            fields:
+                                title:
+                                    label: Τίτλος
+                                    type: text
+                                hide:
+                                    label: Απόκρυψη;
+                                    type: toggle
+                                    text:
+                                        - Οχι
+                                        - Ναι
+                                ages:
+                                    type: text
+                                    label: Ηλικίες
+                                body:
+                                    extends: fields/editor
+                                    label: Περιγραφή
+                                image:
+                                    extends: fields/image
+                                    label: Εικόνα
+
+    seo: tabs/seo
+    message: tabs/message

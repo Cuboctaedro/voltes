@@ -1,0 +1,25 @@
+title: Reviews Page
+
+tabs:
+    content:
+        label: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                services:
+                    type: fields
+                    fields:
+                        reviews:
+                            label: Κριτικές
+                            type: structure
+                            fields:
+                                code:
+                                    label: Facebook Code
+                                    type: text
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+    seo: tabs/seo
+    message: tabs/message

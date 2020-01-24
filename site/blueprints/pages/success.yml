@@ -1,0 +1,22 @@
+title: Default Page
+
+tabs:
+    content:
+        label: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        body:
+                            extends: fields/fulleditor
+                        waiting:
+                            extends: fields/fulleditor
+                            label: Λίστα αναμονής
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles

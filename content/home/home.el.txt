@@ -1,0 +1,31 @@
+Title: Home
+
+----
+
+Body: 
+
+----
+
+Gallery: 
+
+- herodes.jpg
+- kiosk.jpg
+- museumview.jpg
+- panorama.jpg
+- thesion.jpg
+
+----
+
+Description: 
+
+----
+
+Featuredimage: 
+
+----
+
+Authortwitter: 
+
+----
+
+Message: 

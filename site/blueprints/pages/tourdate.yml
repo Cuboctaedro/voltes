@@ -1,0 +1,89 @@
+title: Tour Date
+
+subpage_builder:
+  - title: Booking Form
+    uid: bookingform
+    template: bookingform
+    num: 1
+  - title: Tour Info
+    uid: info
+    template: info
+    num: 2
+
+sections:
+    content:
+        type: fields
+        fields:
+            date:
+                label: Ημερομηνία
+                type: date
+                width: 1/2
+                required: true
+            time:
+                label: Ωρα
+                type: time
+                width: 1/2
+                required: true
+           seats:
+                label: Αριθμός ατόμων
+                type: number
+                default: 18
+                width: 1/2
+            cancelled:
+                label: Ακύρωση Ξενάγησης
+                type: toggle
+                width: 1/2
+                default: false
+                text:
+                  - Οχι
+                  - Ναι
+    bookings:
+        type: pagetable
+        headline: Κρατήσεις
+        status: all
+        templates: booking
+        columns:
+            name:
+                label: Ονομα
+                text: '{{ page.first_name }} {{ page.last_name }}'
+                type: text
+                sortable: true
+                searchable: true
+            email:
+                label: Email
+                text: '{{ page.email }}'
+                type: text
+                sortable: true
+                searchable: true
+            phone:
+                label: Τηλέφωνο
+                text: '{{ page.phone }}'
+                type: text
+                sortable: true
+                searchable: true
+            children:
+                label: Αρ. Παιδιών
+                text: '{{ page.children_number }}'
+                type: number
+                sortable: true
+            teen:
+                label: Αρ. Εφήβων
+                text: '{{ page.teen_number }}'
+                type: number
+                sortable: true
+            adults:
+                label: Αρ. Ενηλίκων
+                text: '{{ page.adult_number }}'
+                type: number
+                sortable: true
+            situation:
+                label: Status
+                text: '{{ page.payment.value }}'
+                type: text
+                sortable: true
+            type:
+                label: Booked
+                text: '{{ page.booking_type.value }}' 
+                type: text
+                sortable: true
+

@@ -1,0 +1,49 @@
+title: EnglishTour Page
+
+tabs:
+    content: Περιεχόμενο
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                        subtitle:
+                            label: Υπότιτλος
+                            type: text
+                        body:
+                            label: Κείμενο
+                            type: markdown
+                            invisibles: false
+                            size: medium
+                            buttons:
+                              - headlines
+                                - h2
+                                - h3
+                                - h4
+                              - bold
+                              - italic
+                              - |
+                              - link
+                              - pagelink
+                              - email
+                              - |
+                              - ul
+                              - ol
+                              - blockquote
+
+          - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+
+                image:
+                    type: fields
+                    fields:
+                        coverimage:
+                            extends: fields/image
+                            label: Εικόνα
+
+    seo: tabs/seo
+    message: tabs/message
