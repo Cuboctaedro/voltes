@@ -1,0 +1,57 @@
+First-name: ΜΑΡΙΑ 6
+
+----
+
+Last-name: ΠΑΠΑΔΟΠΟΥΛΟΥ
+
+----
+
+Address: ΠΡΑΣΝΙΚΑ 14
+
+----
+
+City: ΑΘΗΝΑ
+
+----
+
+Phone: 6977226122
+
+----
+
+Email: mariapapado@gmail.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: uhfuyi
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: waiting
+
+----
+
+Booking-time: 2020-01-20 11:15
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

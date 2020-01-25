@@ -4,7 +4,7 @@
     </div>
 <?php else: ?>
 
-<form action="<?= $page->url() ?>#newsletterform" method="POST" id="newsletterform" class="mb-12">
+<form action="#newsletter-heading" method="POST" id="newsletterform" class="mb-12">
     <div class="mb-6">
         <?php snippet('forms/fields/input', [
             'field_name' => 'newsletter_email',
@@ -22,10 +22,10 @@
             type="submit"
             value="Υποβολή"
             class="g-recaptcha button button_border inline-block cursor-pointer"
-            data-sitekey="<?= option('voltes.recaptcha'); ?>" 
-            data-callback='onSubmit'
         >
     </div>
 </form>
 
 <?php endif; ?>
+            <!-- data-sitekey="<?= option('voltes.recaptcha'); ?>" 
+            data-callback='onSubmit' -->

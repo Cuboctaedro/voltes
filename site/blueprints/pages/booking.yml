@@ -85,9 +85,10 @@ sections:
                 label: Ωρα κράτησης
                 width: 1/2
                 translate: false
-            booking_type:
+            bookingstatus:
                 type: text
                 width: 1/2
+                label: Ολοκλήρωση κράτησης
                 translate: false
             payment_method:
                 type: text

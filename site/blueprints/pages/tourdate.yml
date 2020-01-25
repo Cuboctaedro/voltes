@@ -77,13 +77,18 @@ sections:
                 type: number
                 sortable: true
             situation:
-                label: Status
-                text: '{{ page.payment.value }}'
+                label: Πληρωμή
+                text: '{{ page.paymentStatus }}'
                 type: text
                 sortable: true
             type:
-                label: Booked
-                text: '{{ page.booking_type.value }}' 
+                label: Κατάσταση
+                text: '{{ page.bookingStatusDisplay }}' 
                 type: text
+                sortable: true
+            date:
+                label: Ημ. κράτησης
+                text: '{{ page.booking_time }}' 
+                type: date
                 sortable: true
 

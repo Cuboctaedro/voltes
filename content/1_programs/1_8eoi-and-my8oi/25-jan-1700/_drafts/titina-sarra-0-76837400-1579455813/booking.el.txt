@@ -1,0 +1,59 @@
+First-name: Τιτινα
+
+----
+
+Last-name: Σαρρα
+
+----
+
+Address: Γρ. Λαμπράκη 106-108
+
+----
+
+City: Πειραιάς
+
+----
+
+Phone: 2106439705
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 1
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: 
+
+Χρυσάνθη 7
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-19 19:40
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

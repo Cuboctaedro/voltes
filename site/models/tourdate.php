@@ -10,7 +10,16 @@ class TourdatePage extends Page {
 
         return $this->allBookings()->filterBy('isCancelled', '==', false);
     }
-    
+
+    public function completedBookings() {
+
+        return $this->activeBookings()->filterBy('bookingstatus', '==', 'booked');
+    }
+
+    public function waitingBookings() {
+
+        return $this->activeBookings()->filterBy('bookingstatus', '==', 'waiting');
+    }    
     
     public function childrenNumber() {
 
@@ -19,6 +28,20 @@ class TourdatePage extends Page {
         return array_reduce($allchildrenarray, function($carry, $item) { $carry += $item->int(); return $carry; });
     }
 
+    public function childrenBookedNumber() {
+
+        $allchildrenarray = $this->completedBookings()->pluck('children_number');
+
+        return array_reduce($allchildrenarray, function($carry, $item) { $carry += $item->int(); return $carry; });
+    }
+
+    public function childrenWaitingNumber() {
+
+        $allchildrenarray = $this->waitingBookings()->pluck('children_number');
+
+        return array_reduce($allchildrenarray, function($carry, $item) { $carry += $item->int(); return $carry; });
+    }
+        
     public function adultsNumber() {
 
         $alladultsarray = $this->activeBookings()->pluck('adult_number');

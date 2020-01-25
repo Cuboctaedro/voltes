@@ -31,9 +31,10 @@
                 <?php endif; ?>
 
                 <?php snippet('carditems/text', ['text' => $item->body()->kt()]); ?>
+                <?php $contact = $pages->find('contact'); ?>
 
                 <div class="p-3 flex flex-row items-center">
-                    <a href="mailto:info@voltes.city?Subject=Website%20request%20<?= $item->title() ?>" class="font-titles uppercase tracking-wider text-brand-500">Request Availability</a>
+                    <a href="<?= $contact->url(); ?>" class="font-titles uppercase tracking-wider text-brand-500">Request Availability</a>
                 </div>
 
             </article>

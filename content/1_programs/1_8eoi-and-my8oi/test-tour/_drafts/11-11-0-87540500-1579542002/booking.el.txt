@@ -1,0 +1,57 @@
+First-name: 11
+
+----
+
+Last-name: 11
+
+----
+
+Address: 11
+
+----
+
+City: 11
+
+----
+
+Phone: 11
+
+----
+
+Email: tinasarra@gmail.com
+
+----
+
+Children-number: 4
+
+----
+
+Adult-number: 1
+
+----
+
+Children-names: 11
+
+----
+
+Client-message: 
+
+----
+
+Booking-type: booked
+
+----
+
+Booking-time: 2020-01-20 19:40
+
+----
+
+Notes: 
+
+----
+
+Payment: false
+
+----
+
+Cancel: false

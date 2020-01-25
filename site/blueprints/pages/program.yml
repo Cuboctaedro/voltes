@@ -107,13 +107,18 @@ tabs:
                             searchable: true
                         tourstatus:
                             label: Κατάσταση
-                            text: '{{ page.tourstatus }}'
+                            text: '{{ page.statusDisplay }}'
                             type: text
                             sortable: true
                             searchable: true
-                        children:
-                            label: Αριθμός παιδιών
-                            text: '{{ page.childrenNumber }}'
+                        childrenbooked:
+                            label: Αριθμός παιδιών με κράτηση
+                            text: '{{ page.childrenBookedNumber }}'
+                            type: number
+                            sortable: true
+                        childrenwaiting:
+                            label: Αριθμός παιδιών σε αναμονή
+                            text: '{{ page.childrenWaitingNumber }}'
                             type: number
                             sortable: true
                         teens:

@@ -18,7 +18,7 @@ class BookingPage extends Page {
 
     }
 
-    public function bookingStatus() {
+    public function paymentStatus() {
 
         if ($this->isPaid()) {
             return "Πληρωμένη";
@@ -30,5 +30,14 @@ class BookingPage extends Page {
 
     }
 
+    public function bookingStatusDisplay() {
+
+        if ($this->bookingstatus() == 'booked') {
+            return "Ολοκλήρωση";
+        } else {
+            return "Λίστα αναμονής";
+        }
+
+    }
 
 }

@@ -4,7 +4,7 @@
     <?php if ($page->intendedTemplate() != 'contact' && $page->intendedTemplate() != 'bookingform' && $page->intendedTemplate() != 'info') : ?>
     <div class="container gutter flex flex-row flex-wrap pt-16">
         <div class="mx-auto w-full md:w-1/2 mb-12">
-            <h2 class="heading-footer mb-6">Γραφτείτε στο Newsletter</h2>
+            <h2 class="heading-footer mb-6" id="newsletter-heading">Γραφτείτε στο Newsletter</h2>
             <?php snippet('forms/newsletter'); ?>
         </div>
     </div>

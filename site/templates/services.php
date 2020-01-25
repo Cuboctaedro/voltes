@@ -21,8 +21,10 @@
 
                 <?php snippet('carditems/text', ['text' => $service->body()->kt()]); ?>
 
+                <?php $contact = $pages->find('contact'); ?>
+
                 <div class="p-3 flex flex-row items-center">
-                    <a href="mailto:info@voltes.city?Subject=Website%20request%20<?= $service->title() ?>" class="font-titles uppercase tracking-wider text-brand-500" target="_top"><?= t('requestoffer'); ?></a>
+                    <a href="<?= $contact->url(); ?>" class="font-titles uppercase tracking-wider text-brand-500" ><?= t('requestoffer'); ?></a>
                 </div>
 
             </article>
