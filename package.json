@@ -12,7 +12,7 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "dependencies": {
-    "lazysizes": "^5.1.0",
+    "lazysizes": "^5.2.1",
     "siema": "^1.5.1"
   },
   "devDependencies": {
